@@ -19,6 +19,7 @@
           buildInputs = with pkgs; [
             pnpm
             nodejs
+            nodePackages.vercel
           ];
 
           LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath buildInputs;
